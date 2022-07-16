@@ -14,8 +14,9 @@
     "middleware"
   ],
   "repository": "tgerk/cors",
-  "main": "./lib/index.cjs",
-  "module": "./lib/index.js",
+  "exports": {
+    "import": "./lib/index.js"
+  },
   "types": "./lib/index.d.ts",
   "type": "module",
   "dependencies": {
@@ -33,7 +34,7 @@
     "typescript": "^4.7.4"
   },
   "files": [
-    "lib/index.js",
+    "src/index.ts",
     "CONTRIBUTING.md",
     "HISTORY.md",
     "LICENSE",
